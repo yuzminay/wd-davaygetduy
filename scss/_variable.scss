@@ -1,0 +1,69 @@
+@font-face {
+	font-family: GoshaFont;
+	src: url(fonts/GoshaSans-Bold.otf);
+	src: url(fonts/GoshaSans-Regular.otf);
+}
+
+$font1: GoshaFont;
+$color1: #0d0d0d;
+$color2: #F8F4F4;
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden !important;
+	font-family: $font1;
+	font-weight: 300;
+	background-color: #F8F4F4;
+	color: #0d0d0d;
+	// -ms-overflow-style: none; /* IE and Edge */
+	// scrollbar-width: none; /* Firefox */
+}
+// body::-webkit-scrollbar {
+// 	display: none;
+// }
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+
+// $font_xs: 1.5rem;
+// $font_sm: 2rem;
+// $font_md: 2.5rem;
+// $font_lg: 3rem;
+// $font_xl: 3.5rem;
+// $font_2xl: 5rem;
+// $font_3xl: 7rem;
+// $font_4xl: 8rem;
+
+$mb_sm: "min-width: 425px";
+$mb_md: "min-width: 769px";
+$mb_lg: "min-width: 1024px";
+$mb_xl: "min-width: 1440px";
+$mb_2xl: "min-width: 1715px";
+
+.container__full {
+	margin: 0 auto;
+	padding: 0 10px;
+
+	@media ($mb_sm) {
+	}
+	@media ($mb_md) {
+		padding: 0 25px;
+	}
+	@media ($mb_lg) {
+		padding: 0 35px;
+	}
+	@media ($mb_xl) {
+		padding: 0 71px;
+	}
+	@media ($mb_2xl) {
+		padding: 0 142px;
+	}
+}
